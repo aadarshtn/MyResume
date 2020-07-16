@@ -1,0 +1,339 @@
+body{
+
+	margin: 0px;
+
+}
+
+#body-header{
+	height: 55vh;
+	background-image: url(header-background.jpg);
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	background-attachment: fixed;
+}
+
+.horizontal-list{
+
+	list-style: none;
+	padding: 0px;
+	margin : 0px;
+
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 20px 15px 0px 15px;
+}
+
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+
+.nav-menu li a{
+	transition: color 1s, border-bottom 1s;
+}
+
+.nav-menu li a:hover{
+	color: lightgray;
+	border-bottom: 2px solid gray;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.horizontal-list li a:hover{
+	color: gray;
+}
+
+#name-social-container{
+	margin-top: 10vh;
+
+
+}
+
+#my-name{ 
+	font-family: monospace;
+	letter-spacing: 0.1rem;
+	font-size: 4rem;
+	color:white;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+}
+
+.social-icons li a i{
+	padding: 7px;
+	font-size: 1rem;
+	border-radius: 50%;
+	color: lightgray;
+
+}
+
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px black;
+	border: 0px;
+}
+
+
+#profile-image-holder{
+	height : 12rem;
+	width : 12rem;
+	margin : auto;
+	margin-top : -6rem;
+	position: relative;
+}
+
+
+#profile-image-holder img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px gray;
+}
+
+/*About Section*/
+
+#about{
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+#about p{
+	font-family: sans-serif;
+	line-height: 22px;
+	text-align: justify;
+	font-size: 17px;
+}
+
+/*General Section Definition And Section Division Pseudo-Classes*/
+
+section{
+	height: auto;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+}
+
+section:nth-child(2n){
+	background-color: #f2f2f0;
+}
+
+section:nth-child(2n + 1){
+	background-color: white;
+}
+
+/*Skills Section*/
+
+#skills{	
+}
+
+#skill-section-head{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+#skills i{
+	font-size: 3rem;
+	color: #3b5998;
+	margin-right: 10px;
+	margin-top: 5px; 
+}
+
+#skills h1{
+	display: block;
+	width: auto;
+	height: 3rem;
+	margin: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 4rem;
+	font-family: monospace;
+	color: #3b5998;
+}
+
+#skill-content{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+#skill-progress{
+	position: relative;
+	background-color: lightgray;
+	border-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 10rem;
+	margin: 20px;
+	box-shadow: inset 0 0 10px gray;
+}
+
+#skill-progress p{
+	font-size: 1.1rem;
+	font-family: arial;
+	margin:0;
+	padding:0;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	color: white;
+}
+
+/*Skill Progress Scale Classes from 10% to 100%*/
+
+.tenpercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 1rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.twentypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 2rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.thirtypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 3rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.fourtypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 4rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.fiftypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 5rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.sixtypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 6rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.seventypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 7rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.eightypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 8rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.ninetypercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 9rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+
+.hundredpercent-progress{
+	position: absolute;
+	top: -1.25rem;
+	left: -1.25rem;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	padding-left: 15px;
+	height:2.2rem;
+	width: 10rem;
+	margin: 20px;
+	box-shadow: 0px 0px 6px gray;
+}
+/*
+#skills p:nth-child(2n){
+	background-color: #db7618;
+}
+
+#skills p:nth-child(2n+1){
+	background-color: #214973;
+}*/
+
+/*Background Color Classes*/
+
+.orange{
+	background-color: #db7618;
+}
+
+.blue{
+	background-color: #214973;
+}
